@@ -1,0 +1,476 @@
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/*Estilo General */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+/*cuerpo*/
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-image: url('../img/carretera 3.jpg');
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+/* Clases especiales */
+
+.borde {
+	border: 1px solid gray;
+
+}
+
+.titulo{
+	width: 100% ;
+	font-weight: bold;
+	padding: 50px 10px 10px 10px;
+	text-align: center;
+	background: rgb(171, 32, 22, 0.2);
+	font-size: 1.2em;
+
+ 	
+
+}
+.alinear_arr{
+	vertical-align: top;
+}
+
+
+/*ventana modal*/
+
+.modal{
+	width: 100vw;
+	margin:auto;
+	height: 100vh;
+	padding-top: 200px;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 10000;
+	transition: all 500ms ease;
+	opacity:0;
+	visibility: hidden;
+}
+
+.modal:target{
+	opacity:1;
+	visibility:visible;
+}
+
+.modal-contenedor{
+	width: 450px;
+
+	margin: auto;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(255,255,255,1);
+	transition: all 1000ms ease;	
+	position:relative;
+	transform: translateX(100%);
+
+}
+
+.modal:target .modal-contenedor{
+	transform: translateX(0%);
+}
+
+.modal-contenedor .modal-header{
+	padding: 10px;
+	background: #f2f2f2;
+	border-radius: 5px;
+}
+.modal-contenedor .modal-cerrar{
+	position: absolute;
+	text-decoration: none;
+	color: #000;
+	font-size: 1.5em;
+	top: 0.1px;
+	right: 10px;
+}
+
+.modal form{
+	padding: 5px;
+	width: 80%;
+	margin: auto;
+}
+
+.modal form .form_cuerpo  label  {
+	width: 30%;
+}
+.modal form .form_cuerpo  input{
+	width: 68%;
+}
+
+
+
+
+/*contenedor*/
+.contenedor{
+	/*ancho*/
+	width:95% ;
+	/*ajuste de pantalla maximo a ****px */
+	max-width: 1200px;
+	/*Centra el porcentaje faltante*/
+	margin: auto;
+
+}
+
+/* Navegador */
+nav{
+	/*ancho*/
+	width:95% ;
+	/*ajuste de pantalla maximo a ****px */
+	max-width: 1200px;
+	height: 50px;
+	position: fixed;
+
+}
+/*nievel 0*/
+nav ul{
+	list-style: none;
+	text-align: right;
+
+}
+nav ul li{
+	width: 130px; 
+}
+nav ul li:hover>ul{
+	display: block;
+}
+nav .navega>ul>li{
+	display: inline-block;
+}
+nav .ingreso ul li{
+	width: 100%;
+}
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #fff;
+	padding: 10px 5px;
+	text-align:  center;
+	border-bottom: 2px solid #fff;
+}
+nav ul li a:hover{
+	background: rgba(0,0,0,0.5);
+	border-bottom: 2px solid rgba(171, 32, 22);
+
+}
+/*nievel 1*/
+nav li ul{
+	position: absolute;
+	display: none;
+}
+nav .navega li ul{
+	background: #0D0D0D;
+}
+nav .ingreso li ul{
+	background: #878A8C;
+	width: 15%;
+}
+nav li ul li{
+	position: relative;
+}
+
+/*nievel 2*/
+nav li ul li ul{
+	left: 130px;
+	top: 2px;
+}
+.logo{
+	width: 15%;
+	height: 100%;
+	text-align: center;
+	float: left;
+	padding: 1px;
+	background: #2F4159;
+}
+
+.logo img{
+	width: auto;
+	height: 100%;
+
+}
+.navega{
+	width: 70%;
+	height: 100%;
+	float: left;
+	background: #0D0D0D;
+	padding-right: 15px;
+
+}
+
+.ingreso{
+	width: 15%;
+	height: 100%;
+	float: left;
+	background: #878A8C;
+}
+
+
+/* Encabezado */
+header{
+	width: 100%;
+	height: 650px;
+	/*text-align: center;
+	padding: 10%;*/
+
+	/*propiedades para las imagenes*/
+	/*ruta de la imagen*/
+	background-image: url('../img/carro principal.jpg');
+	/*ajuste de la imagen con corde a la caja header*/
+	background-size:100% 100%;
+	/*efecto estatico de la imagen*/
+	background-attachment: fixed;
+}
+.head_opa{
+	width: 100%;
+	height: 100%;
+	padding-top: 40%;
+	color: #ddd;
+	text-align: center;
+	background: rgba(0,0,0,0.7);
+}
+
+.head_opa h1{
+	font-size: 5em;
+}
+.head_opa h1{
+	font-size: 4em;
+}
+
+/* secciones */
+section{
+	width: 100%;
+	height: 750px;
+
+}
+
+/* Portafolio */
+
+.col_port{
+	width: 33.33%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	padding: 30px;
+	background: rgba(179, 167, 150,0.8);
+}
+
+.col_port img{
+	width: 200px;
+	height: 200px;
+	margin: 30px 0;
+	border-radius: 20%;
+}
+
+.col_port p{
+	text-align: justify;
+	margin-bottom: 20px;
+}
+/* Nosotros */
+
+.fil_nos{
+	width: 100%;
+	height: 33.33%;
+	background: rgba(47, 65, 89, 0.8);
+}
+
+
+.col_ext_der_nos{
+	width: 40%;
+	height: 100%;
+	padding: 30px;
+	text-align: left;
+	color: #ddd;
+	float: left;
+}
+
+.col_ext_der_nos p{
+	padding-top: 20px;
+}
+
+.col_ext_izq_nos{
+	width: 40%;
+	height: 100%;
+	padding: 30px;
+	text-align: right;
+	color: #ddd;
+	float: left;
+}
+
+.col_ext_izq_nos p{
+	padding-top: 20px;
+}
+
+.col_cent_nos{
+	width: 20%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	padding: 35px;
+}
+.col_cent_nos img{
+	width: auto;
+	height: 100%;
+
+}
+
+/* contactenos */
+/*propiedades de los formularios*/
+/*atributos de seletores(subclases)*/
+
+form{
+	width:100%;
+	height:100%;
+	/*arriba. derecha, abajo, izquierda*/
+	padding: 100px 30px 80px 40px;
+}
+form label, form input, form textarea{
+	display: inline-block;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 10px;
+	color: rgba(171, 32, 22);
+}
+form .form_enc{
+	color: rgba(171, 32, 22);
+	text-align: center;
+	font-size: 1.2em;
+	padding-bottom: 30px;
+	border-bottom: 1px solid gray;
+}
+form .form_cuerpo{
+	padding: 15px;	
+	border-bottom: 1px solid gray;
+}
+form .form_cuerpo #nombre, form .form_cuerpo #apellido{
+	width: 29.4%;
+
+}
+form .form_cuerpo label{
+	width: 15%;
+	padding-left: 20px;
+}
+form .form_cuerpo input{
+	width: 75%;
+	height: 30px;
+	padding: 5px;
+	color: black;
+}
+form .form_cuerpo textarea{
+	width: 75%;
+	padding: 5px;
+	height: 180px;
+	resize: none;
+	color: black;
+}
+form .form_pie{
+	text-align: center;
+	padding:20px;
+
+
+}
+form .form_pie input{
+	color: rgba(171, 32, 22);	
+	font-size: 1em;
+	width: 100px;	
+	height: 30px;
+
+}
+
+form .form_pie [type="reset"]{
+	background: #0D0D0D;
+	color: rgba(171, 32, 22);
+	cursor: pointer;
+}
+form .form_pie [type="submit"]{
+	background: #0D0D0D;
+	color: #01AD12;
+	cursor: pointer;
+}
+
+form input:valid{
+	border: 1px solid green;
+}
+form input:invalid{
+	border: 1px solid red;
+}
+.col_cont{
+
+	width: 50%;
+	height:100%;
+	float: left;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+
+.col_arri_cont{
+	width: 100%;
+	height: 60%;
+	float: left;
+	padding: 30px;
+}
+
+.col_arri_cont iframe{
+	width: 	100%;
+	height: 100%;
+	border: 0;
+	
+}
+.col_abaj_cont{
+	width: 100%;
+	height: 40%;
+	float: left;
+	font-size: 4em;
+}
+.des_aba_cont{
+	width: 100%;
+	height: 60%;
+	color: #ffffff;
+	font-size: 0.3em;
+	text-align: center;
+	padding: 20px;
+}
+
+.ico_aba_cont{
+	width: 100%;
+	height: 40%;
+
+}
+
+.div_ico_aba_cont{
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	font-size: 1em;
+}
+.div_ico_aba_cont a{
+	color: #2F4159;
+}
+
+.div_ico_aba_cont a:hover{
+	color: #AB2016;
+
+}
+	
+/* Pie de pagina */
+footer{
+	width: 100%;
+	height: 50px;
+	background: rgba(201, 181, 1, 0.8);
+	text-align: center;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 5px;
+}

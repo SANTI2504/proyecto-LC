@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pagina Principal - LDB - LandingPage</title>
+	<link rel="shortcut icon" href="img/isotipo_lessence car.png">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<div class="contenedor">
+
+		<!-- ventana modal -->
+
+		<div id="modal" class="modal">
+			<div class="modal-contenedor">
+				<div class="modal-header">Inicio de sesion</div>
+				<a href="#" class="modal-cerrar">x</a>
+				<div class="modal-contenido">
+					<form action="" method="get" id="myform">
+						<div class="form_cuerpo">
+							<div>
+								<label for="user">Usuario</label>
+								<input name="user" id="user" type="email" placeholder="user" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+							</div>
+							<div>
+								<label for="password">Password</label>
+								<input name="password" id="password" type="password" placeholder="escriba entre 5 y 8 caracteres" pattern="[a-zA-Z0-9]{5,8}" required>
+							</div>
+						</div>
+						<div class="form_pie">
+							<div>
+								<input type="reset" value="Cancelar" onclick="cancelar()">
+								<input type="submit" value="Enviar">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!--  Navegador  -->
+		<nav >
+			<div class=" logo ">
+				<!-- ../ -->
+				<img src="img/Logo_LC.png" alt="logo empresa" title="Lessence car">
+			</div>
+			<div class=" navega">
+				<!-- ul: lista desordenada (viñeta)-->
+				<!-- li: elemento de la lista -->
+				<!-- a: permite hacer la navegación -->
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#portafolio">Portafolio</a>
+						<ul>
+							<li><a href="">Productos</a>
+								<ul>
+									<li><a href="">Producto 1</a></li>
+									<li><a href="">Producto 2</a></li>
+									<li><a href="">Producto 3</a></li>
+								</ul>
+							</li>
+							<li><a href="">Servicios</a></li>
+						</ul>
+					</li>
+					<li><a href="#nosotros">Nosotros</a></li>
+					<li><a href="#contactenos">Contactenos</a></li>
+
+
+				</ul>
+			</div>
+			<div class=" ingreso">
+				<ul>
+					<li><a href="">Ingreso</a>
+						<ul>
+							<li><a href="">registro</a></li>
+							<li><a href="#modal">Iniciar Secion</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+
+		<!-- Encabezado -->
+		<header >
+
+			<div class="head_opa">
+				<h1>BIENVENIDOS</h1>
+				<H2>A L'ESSENCE CAR</H2>
+			</div>
+       
+		</header>
+		<!-- Portafolio -->
+		<div id="portafolio" class=" titulo">
+			<h1>Portafolio</h1>
+		</div>
+		<section >
+			<div class=" col_port">
+				<h2>subtitulo</h2>
+				<!-- parrafos usaror lorem 30 parrafos falsos -->
+				<img src="img/carro azul 2.jpg" alt="">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia corporis eius officia sed illum iste, voluptas modi, commodi veniam quod suscipit repellat neque dolore eos! Asperiores debitis deserunt, molestias quibusdam voluptatum vitae omnis tempore quaerat eligendi adipisci vero natus at nihil, sequi, sit temporibus laudantium consectetur minus quod neque doloribus.</p>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Architecto temporibus voluptatum, magni distinctio qui voluptatem consequatur, accusantium dolorem sunt veniam.</p>
+			</div>
+
+			<div class=" col_port">
+				<h2>subtitulo</h2>
+				<!-- parrafos usaror lorem 30 parrafos falsos -->
+				<img src="img/carro azul 2.jpg" alt="">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia corporis eius officia sed illum iste, voluptas modi, commodi veniam quod suscipit repellat neque dolore eos! Asperiores debitis deserunt, molestias quibusdam voluptatum vitae omnis tempore quaerat eligendi adipisci vero natus at nihil, sequi, sit temporibus laudantium consectetur minus quod neque doloribus.</p>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Architecto temporibus voluptatum, magni distinctio qui voluptatem consequatur, accusantium dolorem sunt veniam.</p>
+			</div>
+			<div class=" col_port">
+				<h2>subtitulo</h2>
+				<!-- parrafos usaror lorem 30 parrafos falsos -->
+				<img src="img/carro azul 2.jpg" alt="">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia corporis eius officia sed illum iste, voluptas modi, commodi veniam quod suscipit repellat neque dolore eos! Asperiores debitis deserunt, molestias quibusdam voluptatum vitae omnis tempore quaerat eligendi adipisci vero natus at nihil, sequi, sit temporibus laudantium consectetur minus quod neque doloribus.</p>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Architecto temporibus voluptatum, magni distinctio qui voluptatem consequatur, accusantium dolorem sunt veniam.</p>
+			</div>
+
+		</section>
+
+		<!-- Nosotros -->
+		<div id="nosotros" class=" titulo">
+			<h1>Nosotros</h1>
+		</div>
+		<section >
+			<div class="  fil_nos">
+				
+				<div class=" col_ext_izq_nos">
+					<h2>subtitulo</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quidem eius, provident beatae nulla pariatur rerum, voluptatibus eaque nemo ducimus esse illum ullam, sequi consequuntur quis vero deserunt sunt amet vel neque commodi consequatur odio. Qui animi sint minima laborum. Dicta laboriosam tempore ex sunt ad ullam, voluptates omnis quaerat.</p>
+				</div>
+				<div class="  col_cent_nos">
+					<img src="img/isotipo_lessence car.png" alt="">
+				</div>
+				<div class=" col_ext_izq_nos"></div>
+			</div>
+			<div class=" fil_nos">
+				
+				<div class=" col_ext_der_nos"></div>
+				<div class=" col_cent_nos">
+					<img src="img/isotipo_lessence car.png" alt="">
+				</div>
+				<div class=" col_ext_der_nos">
+					<h2>subtitulo</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quidem eius, provident beatae nulla pariatur rerum, voluptatibus eaque nemo ducimus esse illum ullam, sequi consequuntur quis vero deserunt sunt amet vel neque commodi consequatur odio. Qui animi sint minima laborum. Dicta laboriosam tempore ex sunt ad ullam, voluptates omnis quaerat.</p>
+				</div>
+			</div>
+			<div class="fil_nos">
+				
+				<div class=" col_ext_izq_nos">
+					<h2>subtitulo</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quidem eius, provident beatae nulla pariatur rerum, voluptatibus eaque nemo ducimus esse illum ullam, sequi consequuntur quis vero deserunt sunt amet vel neque commodi consequatur odio. Qui animi sint minima laborum. Dicta laboriosam tempore ex sunt ad ullam, voluptates omnis quaerat.</p>
+				</div>
+				<div class=" col_cent_nos">
+					<img src="img/isotipo_lessence car.png" alt="">
+				</div>
+				<div class=" col_ext_izq_nos"></div>
+			</div>
+		</section>
+
+
+		<!-- Contactenos -->
+		<div id="contactenos" class=" titulo">
+			<h1>Contactenos</h1>
+		</div>
+		<section >
+
+			<div class=" col_cont">
+				<!-- formularios -->
+				<form action="" method="">
+					<div class="form_enc">
+						<h1>si deseas comprar o vender tu carro contactanos</h1>
+					</div>
+					<div class="form_cuerpo">
+						<div>
+						<!-- caja de control  -->
+							<label for="nombre">Nombre</label>
+							<input name="nombre" id="nombre" type="text" placeholder="Nombres">
+
+							<label for="apellido">Apellido</label>
+							<input name="apellido" id="apellido" type="text" placeholder="Apellidos">
+						</div>
+						<div>
+						<!-- caja de control  -->
+							<label for="correo">Correo</label>
+							<input name="correo" id="correo" type="email" placeholder="Correo">
+						</div>
+						<div>
+						<!-- caja de control  -->
+							<label for="asunto">Asunto</label>
+							<input name="asunto" id="asunto" type="text" placeholder="Asunto">
+						</div>
+						<div>
+							<label class="alinear_arr" for="Mensaje">Mensaje</label>
+							<textarea name="mensaje" id="mensaje" placeholder="Mensaje" ></textarea>
+						</div>
+
+					</div>
+					<div class="form_pie">
+
+						<input type="reset" value="Cancelar">
+						<input type="submit" value="Enviar" onclick="datos_env();">
+					</div>
+				</form>
+
+			</div>
+			<div class="  col_cont">
+				<div class=" col_arri_cont">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1988.4355709284166!2d-74.16862096913552!3d4.6170667158701075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e88f81dc3fb%3A0x70038d4eff4ad3d!2sCentro%20Comercial%20Casablanca!5e0!3m2!1ses!2sco!4v1599622581740!5m2!1ses!2sco" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+				<div class=" col_abaj_cont">
+					<div class="  des_aba_cont">
+						<p>Direccion: carrera 79 B N46 - 17 sur  </p>
+						<p>telefono: 3112891804 </p>
+						<p>correo: lessencecar@gmail.com</p>
+						<p>Bogota. D.C.</p>
+					</div>
+					<div class=" ico_aba_cont">
+						<div class=" div_ico_aba_cont"><a href="https://www.facebook.com/Lessence-Car-110569150374486" target="_blank"><i class="fab fa-facebook"></a></i>
+						</div>
+						<div class=" div_ico_aba_cont"><a href="https://www.youtube.com/channel/UC2fICsmdd1BiOq2EL4UbIvg?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></a></i>
+
+
+						</div>
+						<div class=" div_ico_aba_cont">
+							<a href="https://instagram.com/lessence_car?igshid=qdj4995yz2nb" target="_blank"><i class="fab fa-instagram"></a></i>
+						</div>	
+						<div class=" div_ico_aba_cont"><a href="https://twitter.com/LessenceCar" target="_blanck"><i class="fab fa-twitter"></a></i>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+
+		</section>
+
+		<!-- Pie de pagina -->
+		<footer >
+			<p>todos los derechos reservados a</p>
+			<p>Santiago Cardenas © CopyRight 2020</p>
+		</footer>
+
+	</div>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>
