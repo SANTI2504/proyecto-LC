@@ -10,7 +10,7 @@
 
 
 body{
-	background: rgba(245,125,119,0.2);
+
 }
 
 /* clases especiales */
@@ -24,22 +24,17 @@ body{
 nav {
 	width: 100%;
 	height: 9.4vh;
-	background: #00B2FF;
 }
 .logo{
 	width: 10%;
 	height: 100%;
 	float: left;
-	background: #ecececff;
 	border-bottom: 2px solid black;
-
-
 }
 .logo1{
 	width: 50%;
 	height: 100%;
 	float: left;
-	background: #ecececff;
 	text-align: center;
 	padding: 2px;
 
@@ -48,7 +43,6 @@ nav {
 	width: 50%;
 	height: 100%;
 	float: left;
-	background: #ecececff;
 
 }
 
@@ -145,20 +139,18 @@ nav .ingreso ul li a{
 }
 nav .ingreso ul li {
 	width: 100%;
-	background: #00B2FF;
 }
+
 
 
 nav ul li a:hover{
-	background: rgb(0,0,0,0.5);
-	border-bottom: 3px solid black;
-	color: black;
+	border-bottom: 3px solid #BDCC31;
+	color: #BDCC31;
 }
 
 nav .ingreso ul li a:hover{
-	background: rgb(0,0,0,0.5);
-	border-bottom: 3px solid red;
-	color: red;
+	border-bottom: 3px solid black;
+	color: black;
 }
 /*nivel 1*/
 nav li ul{
@@ -231,7 +223,6 @@ aside{
 	width: 10%;
 	height: 85vh;
 	float: left;
-	background: #00B2FF;
 	transition: 500ms ease;
 
 }
@@ -281,11 +272,8 @@ aside ul li a{
 }
 
 aside ul li:hover a{
-
-	color: black;
-	border-left: 10px solid black;
-	background: rgba(0,0,0,0.5);
-
+	color: #BDCC31;
+	border-left: 10px solid #BDCC31;
 }
 
 /*Area de trabajo*/
@@ -293,7 +281,6 @@ main{
 	width: 90%;
 	height: 85vh;
 	float: left;
-	background: rgba(236,236,236);
 	transition: 500ms ease;
 }
 
@@ -311,7 +298,6 @@ footer{
 	height: 5.6vh;
 	font-size: 0.6em;
 	padding: 6px 8px;
-	background: black;
 }
 
 footer p{

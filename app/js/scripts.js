@@ -1,13 +1,34 @@
 function crear_usuario(){
-	alert("Usuario creado correctamente");
+	swal("se a creado el usuario correctamente!", {
+				icon: "success",
+			});
+	
 }
 
 function actualizar_usuario(){
-	alert("Usuario actualizado correctamente");
+	swal("Se a actualizado los datos correctamente", {
+				icon: "success",
+			});
 }
 
 function eliminar_usuario(){
-	alert("Usuario eliminado Correctamente");
+	// plugin 
+	swal({
+		title: "Estas seguro?",
+		text: "si precionas ok se eliminara el usuario del sistema!",
+		icon: "warning",
+		buttons: true,
+		dangerMode: true,
+	})
+	.then((willDelete) => {
+		if (willDelete) {
+			swal("se a eliminado el usuario correctamente!", {
+				icon: "success",
+			});
+		} else {
+			swal("has cancelado la accion");
+		}
+	});
 }
 
 function imprimir(){

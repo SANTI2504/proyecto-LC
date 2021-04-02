@@ -287,15 +287,18 @@ form .form-pie input{
 
 form .form-pie input[type="reset"]{
 	background: red;
-
-
+	cursor: pointer;	
 }
 
 form .form-pie input[type="submit"]{
 	background: green;
+	cursor: pointer;
 }
 
-
+form .form-pie input[type="button"]{
+	background: green;
+	cursor: pointer;
+}
 
 /*reportes*/
 

@@ -57,9 +57,6 @@
 						<label for="email">Correo Electronico</label>
 						<input name="email" id="email" type="text" placeholder="Correo Electronico">
 
-						<label for="conf-email">Confirmar Correo Electronico</label>
-						<input name="conf-email" id="conf-email" type="email" placeholder="Correo Electronico">
-
 					</div>
 
 					<div>
@@ -94,7 +91,7 @@
 						<select name="perfil" id="perfil">
 							<option value="paciente">Paciente</option>
 							<option value="especialista">Especialista</option>
-							<option value="Auxiliar">Auxiliar</option>
+								<option value="Auxiliar">Auxiliar</option>
 							<option value="admin">Administrador</option>
 						</select>
 
@@ -110,13 +107,18 @@
 
 				<div class="form-pie">
 					<input type="reset" value="Cancelar">
-					<input type="submit" value="Actualizar Usuario" onclick="actualizar_usuario();">
+					<input type="button" value="Actualizar Usuario" onclick="actualizar_usuario();">
 				</div>
 			</form>
 		</div>
 
 		<p></p>
 	</div>
+	<!-- plugin java scrip alertas dirigido a una pagina -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<!-- plugin java scrip alertas instalado -->
+	<script src="../../js/sweetalert.min.js"></script>
+	<!-- java cript -->
 	<script src="../../js/scripts.js"></script>
 </body>
 </html>
